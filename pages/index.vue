@@ -29,6 +29,7 @@ export default {
 
   methods: {
     async fetchApod(date) {
+      console.log('process', process.env)
       this.isLoading = true
       let url = `https://api.nasa.gov/planetary/apod`
       url += '?api_key=G104rrn3edkbnCbmEFkQKUoM7qPT08alOw6AshtP'
