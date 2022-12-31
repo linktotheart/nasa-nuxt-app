@@ -1,5 +1,5 @@
 <template>
-  <div class="navbar bg-base-100">
+  <div class="navbar bg-base-200">
   <div class="flex-1">
     <span class="btn btn-ghost text-xl">NASA APOD</span>
   </div>

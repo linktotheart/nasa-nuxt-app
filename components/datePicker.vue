@@ -3,7 +3,7 @@
 	<!-- <label class="label">
 		<span class="label-text">Date</span>
 	</label> -->
-	<label class="input-group">
+	<label class="input-group input-group-sm">
 		<span>Date</span>
 		<input type="date" v-model="date" @change="$emit('change', date)" class="input input-bordered" />
 	</label>

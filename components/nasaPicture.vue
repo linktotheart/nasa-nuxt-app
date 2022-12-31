@@ -1,12 +1,12 @@
 <template>
-  <div class="card">
-	<figure class="block cursor-pointer mb-4 rounded max-h-[30rem] relative mih-h-[30rem] bg-base-200" @click="openFull" >
+  <div class="card bg-base-100">
+	<figure class="block cursor-pointer mb-4 rounded relative  lg:max-h-[30rem]  lg:min-h-[30rem]  max-h-[18srem]  min-h-[18srem] bg-base-200" @click="openFull" >
 		<img :src="data.url" class="block object-fill" :alt="data.title">
 	</figure>
-	<h2 class="card-title font-medium mb-4	 text-3xl">
+	<h2 class=" card-title font-medium mb-4	 text-2xl lg:text-center">
 		{{ data.title }}
 	</h2>
-	<p class="text-gray-300 leading-5">
+	<p class="text-gray-300 font-mono leading-5">
 		{{ data.explanation }}
 	</p>
   </div>

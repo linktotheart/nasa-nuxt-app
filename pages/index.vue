@@ -1,17 +1,15 @@
 <template>
- <div class="container px-4 mx-auto">
   <div class="card">
     <div class="card-body px-0 md:px-4 lg:px-6 ">
       <div class="flex w-full justify-between mb-4">
         <date-picker @change="date = $event" />
-        <button class="btn btn-primary" @click="fetchApod(date)">Generate</button>
+        <button class="btn btn-primary" @click="fetchApod(date)">Go</button>
       </div>
 
       <loader v-if="isLoading" />
       <nasaPicture :data="imgData" v-else />
     </div>
   </div>
- </div>
 </template>
 
 <script>
